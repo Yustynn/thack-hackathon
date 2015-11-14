@@ -1,0 +1,1098 @@
+{
+   "hotels": [
+      {
+         "hotelId": "3230705",
+         "name": "Hotel Pennsylvania",
+         "brandId": "0",
+         "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1253861&ids=145062",
+         "starRating": 2,
+         "location": {
+            "address": {
+               "addressLine1": "401 7th Avenue",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10001",
+               "phone": "212-736-5000",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.991234,
+            "latitude": 40.750095,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3014",
+            "neighborhoodName": "Chelsea",
+            "cityId": 3000016152,
+            "zoneId": "51142"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/3230/3230705/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "BUSCNTR",
+               "RESTRNT",
+               "FITSPA",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 4.9,
+         "totalReviewCount": 580,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.7673965,
+         "chainCode": "WV",
+         "ratesSummary": {
+            "minPrice": "190.40",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "minStrikePrice": "215.40",
+            "pclnId": "61AEC79F0151C7DD5376FE47C1977DFE9A6E7DB2AE25FDCA478F92A2AA1C0B38",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "minRatePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "On Sale Now -> Save 12% on this stay",
+                  "desc": "Book Now and Save",
+                  "terms": "Blackout dates apply, Offer is not combinable with any other offer, Minimum Stay Required, Based on availability",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 11.606314,
+                  "displayStrikethroughPrice": "215.40",
+                  "displayStrikethroughPriceCurrency": "USD",
+                  "nativeStrikethroughPrice": "215.40",
+                  "nativeStrikethroughPriceCurrency": "USD",
+                  "showDiscount": true,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "availablePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "On Sale Now -> Save 12% on this stay",
+                  "desc": "Book Now and Save",
+                  "terms": "Blackout dates apply, Offer is not combinable with any other offer, Minimum Stay Required, Based on availability",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 11.606314,
+                  "displayStrikethroughPrice": "215.40",
+                  "displayStrikethroughPriceCurrency": "USD",
+                  "nativeStrikethroughPrice": "215.40",
+                  "nativeStrikethroughPriceCurrency": "USD",
+                  "showDiscount": true,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "40622",
+         "name": "Park Central",
+         "brandId": "0",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "870 Seventh Avenue At 56th Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10019",
+               "phone": "212-247-8000",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.98059,
+            "latitude": 40.764812,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3011",
+            "neighborhoodName": "Times Square",
+            "cityId": 3000016152,
+            "zoneId": "3911"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/40/40622/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "BUSCNTR",
+               "FINTRNT",
+               "FINTRRM",
+               "FITSPA",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 7.8,
+         "totalReviewCount": 148,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 5.632276,
+         "chainCode": "XT",
+         "ratesSummary": {
+            "minPrice": "395.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "minStrikePrice": "438.89",
+            "pclnId": "8C24185BFB19044F5336AED842F6825F7347A24BC7F10561",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "minRatePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "On Sale Now -> Save 10% on this stay",
+                  "desc": "Stay and Save",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 10.000228,
+                  "displayStrikethroughPrice": "438.89",
+                  "displayStrikethroughPriceCurrency": "USD",
+                  "nativeStrikethroughPrice": "438.89",
+                  "nativeStrikethroughPriceCurrency": "USD",
+                  "showDiscount": true,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "availablePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "On Sale Now -> Save 10% on this stay",
+                  "desc": "Stay and Save",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 10.000228,
+                  "displayStrikethroughPrice": "438.89",
+                  "displayStrikethroughPriceCurrency": "USD",
+                  "nativeStrikethroughPrice": "438.89",
+                  "nativeStrikethroughPriceCurrency": "USD",
+                  "showDiscount": true,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               },
+               {
+                  "type": "DISCOUNT",
+                  "title": "Limited Time Offer. Rate includes 10% discount!",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 10.000228,
+                  "displayStrikethroughPrice": "438.89",
+                  "displayStrikethroughPriceCurrency": "USD",
+                  "nativeStrikethroughPrice": "438.89",
+                  "nativeStrikethroughPriceCurrency": "USD",
+                  "showDiscount": true,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "40730",
+         "name": "Wyndham New Yorker Hotel",
+         "brandId": "26",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "481 8th Avenue",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10001",
+               "phone": "212-971-0101",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.99349,
+            "latitude": 40.75218,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3014",
+            "neighborhoodName": "Chelsea",
+            "cityId": 3000016152,
+            "zoneId": "51142"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/40/40730/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "BUSCNTR",
+               "RESTRNT",
+               "FITSPA",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 6.9,
+         "totalReviewCount": 1320,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.733529,
+         "chainCode": "WY",
+         "ratesSummary": {
+            "minPrice": "329.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "30936A501884DEC05BECF12CC4E446C4CE091876B403E8A4",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "42071",
+         "name": "Night Hotel Times Square",
+         "brandId": "481304",
+         "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1302538&ids=145062",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "157 West 47th Street",
+               "addressLine2": "157 West 47th Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10036",
+               "phone": "212-768-3700",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.98387,
+            "latitude": 40.758884,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3011",
+            "neighborhoodName": "Times Square",
+            "cityId": 3000016152,
+            "zoneId": "51081"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/42/42071/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "BUSCNTR",
+               "RESTRNT",
+               "FINTRNT",
+               "FINTRRM",
+               "FINTRPUB",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 7.5,
+         "totalReviewCount": 329,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.054261,
+         "chainCode": "NG",
+         "ratesSummary": {
+            "minPrice": "349.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "82B79B652414FBF85BECF12CC4E446C415BF23AECB779EBE",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "roomLeft": 5,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "40030",
+         "name": "Crowne Plaza Times Square Manhattan",
+         "brandId": "5",
+         "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1050400&ids=145062",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "1605 Broadway And 49th",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10019",
+               "phone": "212-977-4000",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.98442,
+            "latitude": 40.76077,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3011",
+            "neighborhoodName": "Times Square",
+            "cityId": 3000016152,
+            "zoneId": "51081"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/40/40030/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "BUSCNTR",
+               "RESTRNT",
+               "FITSPA",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 8.5,
+         "totalReviewCount": 587,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 5.9741573,
+         "chainCode": "CP",
+         "ratesSummary": {
+            "minPrice": "369.75",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "1809170B522F622A311D1E466A6E7503ABDA27CACF353F00",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "40408",
+         "name": "Grand Hyatt New York",
+         "brandId": "41",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "109 East 42nd Street",
+               "addressLine2": "109 East 42nd Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10017",
+               "phone": "212-883-1234",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.97613,
+            "latitude": 40.751743,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3012",
+            "neighborhoodName": "Midtown East",
+            "cityId": 3000016152,
+            "zoneId": "3910"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/40/40408/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "BUSCNTR",
+               "RESTRNT",
+               "FINTRNT",
+               "FITSPA",
+               "FINTRPUB",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 8.5,
+         "totalReviewCount": 1048,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.2008905,
+         "chainCode": "HY",
+         "ratesSummary": {
+            "minPrice": "449.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "1A5D7923134572B85BECF12CC4E446C4D1FE15A1DAF20D2F",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "availablePromos": [
+               {
+                  "type": "VALUE_ADD",
+                  "title": "Free Breakfast",
+                  "desc": "Bed and Breakfast",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability. This Negotiated Special is valid for up to two adults per room traveling on the dates selected. No credit will be given for any unused portion of this Negotiated Special.",
+                  "valueAddDesc": false,
+                  "discountPercentage": 0,
+                  "showDiscount": false,
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "47879705",
+         "name": "Pod 39",
+         "brandId": "0",
+         "starRating": 3,
+         "location": {
+            "address": {
+               "addressLine1": "145 East 39th Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10016",
+               "phone": "+12128655700",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.97664,
+            "latitude": 40.74931,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3013",
+            "neighborhoodName": "Grand Central - Empire State Building",
+            "cityId": 3000016152,
+            "zoneId": "51143"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/47879/47879705/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "RESTRNT",
+               "FINTRNT",
+               "FINTRAVL",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 8.5,
+         "totalReviewCount": 42,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.3550935,
+         "ratesSummary": {
+            "minPrice": "180.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "5FA8F370C5CA70BBFB30593EFD03013CE1109351B29575C52E1E0560439F76D5",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "minRatePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "Smart Deal",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 0,
+                  "showDiscount": false,
+                  "dealType": "SMART",
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "availablePromos": [
+               {
+                  "type": "DISCOUNT",
+                  "title": "Smart Deal",
+                  "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                  "valueAddDesc": false,
+                  "discountType": "PERCENT",
+                  "discountPercentage": 0,
+                  "showDiscount": false,
+                  "dealType": "SMART",
+                  "freeNightCumulative": false,
+                  "numNightsPerFreeNight": 0,
+                  "numFreeNightsGiven": 0
+               }
+            ],
+            "roomLeft": 5,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "17606504",
+         "name": "The Mave Hotel",
+         "brandId": "0",
+         "starRating": 3,
+         "location": {
+            "address": {
+               "addressLine1": "62 Madison Ave",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10016",
+               "phone": "212-532-7373",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.98608,
+            "latitude": 40.743492,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3013",
+            "neighborhoodName": "Grand Central - Empire State Building",
+            "cityId": 3000016152,
+            "zoneId": "51143"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/17606/17606504/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "FBRKFST",
+               "FITSPA",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 7.6,
+         "totalReviewCount": 143,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 6.9663787,
+         "chainCode": "PW",
+         "ratesSummary": {
+            "minPrice": "254.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "2120729697A1F7F252F963D456A4C80B668FDDC630E2AB7337F975A3F5A0C859",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "roomLeft": 1,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "41787",
+         "name": "The Empire Hotel",
+         "brandId": "0",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "44 West 63rd Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10023",
+               "phone": "212-265-7400",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.980484,
+            "latitude": 40.770664,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3008",
+            "neighborhoodName": "Upper West Side",
+            "cityId": 3000016152,
+            "zoneId": "3908"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/41/41787/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "SPOOLOUT",
+               "BUSCNTR",
+               "RESTRNT",
+               "SPOOL",
+               "FITSPA",
+               "NSMKFAC",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 7.1,
+         "totalReviewCount": 835,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 5.3326507,
+         "chainCode": "WW",
+         "ratesSummary": {
+            "minPrice": "399.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "77426F29A3DF6A635BECF12CC4E446C45768351A1B460D22",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      },
+      {
+         "hotelId": "187102",
+         "name": "Hudson, A Morgans Original",
+         "brandId": "0",
+         "starRating": 4,
+         "location": {
+            "address": {
+               "addressLine1": "356 West 58 Street",
+               "cityName": "New York",
+               "provinceCode": "NY",
+               "countryName": "United States",
+               "zip": "10019",
+               "phone": "212-554-6000",
+               "isoCountryCode": "US"
+            },
+            "longitude": -73.9839,
+            "latitude": 40.76812,
+            "timeZone": "America/New_York",
+            "neighborhoodId": "3010",
+            "neighborhoodName": "Midtown West",
+            "cityId": 3000016152,
+            "zoneId": "3911"
+         },
+         "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/187/187102/thumbnail-150-square.jpg",
+         "hotelFeatures": {
+            "hotelAmenityCodes": [
+               "PETALLOW",
+               "BUSCNTR",
+               "RESTRNT",
+               "HANDFAC"
+            ]
+         },
+         "overallGuestRating": 6.2,
+         "totalReviewCount": 2086,
+         "guestReviewGdsName": "PCLN",
+         "proximity": 5.5833187,
+         "chainCode": "MR",
+         "ratesSummary": {
+            "minPrice": "419.00",
+            "minCurrencyCode": "USD",
+            "minCurrencyCodeSymbol": "$",
+            "pclnId": "A201D6E78630A6C40C0B361067D65092965D6C24CE1EB27F408E232E179DAC6F",
+            "freeCancelableRateAvail": true,
+            "payWhenYouStayAvailable": true,
+            "ccNotRequiredAvailable": false
+         },
+         "allInclusiveRateProperty": false,
+         "recentlyViewed": false,
+         "dealUnwrapable": false
+      }
+   ],
+   "sponsoredHotels": [
+      {
+         "hotel": {
+            "hotelId": "32559505",
+            "name": "Springhill Stes By Marriott New York Midtown Manhattan/Fifth Ave",
+            "brandId": "116",
+            "starRating": 3.5,
+            "location": {
+               "address": {
+                  "addressLine1": "25 West 37th St",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10018",
+                  "phone": "212-391-2255",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -73.9846,
+               "latitude": 40.75119,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3013",
+               "neighborhoodName": "Grand Central - Empire State Building",
+               "cityId": 3000016152,
+               "zoneId": "51143"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/32559/32559505/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "FINTRNT",
+                  "FBRKFST",
+                  "FINTRRM",
+                  "FITSPA",
+                  "FINTRPUB",
+                  "NSMKFAC",
+                  "HANDFAC"
+               ]
+            },
+            "overallGuestRating": 9,
+            "totalReviewCount": 39,
+            "guestReviewGdsName": "PCLN",
+            "chainCode": "XV",
+            "ratesSummary": {
+               "minPrice": "474.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "minStrikePrice": "499.00",
+               "pclnId": "C008BE12EEB6B0E689D1F970FFA6F0A32F9BA8180E482A70669ACE98531F1EB9",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "minRatePromos": [
+                  {
+                     "type": "DISCOUNT",
+                     "title": "Special Discount 5% off",
+                     "desc": "Advance Purchase",
+                     "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                     "valueAddDesc": false,
+                     "discountType": "PERCENT",
+                     "discountPercentage": 5.0100203,
+                     "displayStrikethroughPrice": "499.00",
+                     "displayStrikethroughPriceCurrency": "USD",
+                     "nativeStrikethroughPrice": "499.00",
+                     "nativeStrikethroughPriceCurrency": "USD",
+                     "showDiscount": true,
+                     "freeNightCumulative": false,
+                     "numNightsPerFreeNight": 0,
+                     "numFreeNightsGiven": 0
+                  }
+               ],
+               "availablePromos": [
+                  {
+                     "type": "DISCOUNT",
+                     "title": "Special Discount 5% off",
+                     "desc": "Advance Purchase",
+                     "terms": "Negotiated Specials may be limited to certain dates and subject to availability.",
+                     "valueAddDesc": false,
+                     "discountType": "PERCENT",
+                     "discountPercentage": 5.0100203,
+                     "displayStrikethroughPrice": "499.00",
+                     "displayStrikethroughPriceCurrency": "USD",
+                     "nativeStrikethroughPrice": "499.00",
+                     "nativeStrikethroughPriceCurrency": "USD",
+                     "showDiscount": true,
+                     "freeNightCumulative": false,
+                     "numNightsPerFreeNight": 0,
+                     "numFreeNightsGiven": 0
+                  }
+               ],
+               "roomLeft": 5,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 15892684,
+         "details": "Enjoy large suites, workspaces located by Bryant Park. Close to Times Square, Chelsea & Central Park. Complimentary WiFi.",
+         "detailHeadline": "Great 5th Ave Location, Free Breakfast",
+         "hotelImage": "https://aff.bstatic.com/images/hotel/square60/191/19184930.jpg",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW4+w6WS27JWkxe46TQGCMZmFl50JFqs6ZO7YLnNcvmpmD0oxtyQLKxOGExfjtTKoQagwCDCcPjO3EHDFBprcpVfbMPFzyLdvcHmIOmwHJyTOanuskhKfN7yHUYsmDpaMnUNE90Oc8gr5WgvDtvS/XzpQXdNmXLY+JlrVeoyH/URa+zUj1xu2X4nYFbviUo8UHks75P3EtN190U/F7VOInwGhtIFz34KP3c0PuHivObut11S49DnQGdmdeXJX5sVO6wsIiR4DPNJKwh7BOBYrFhpJPvZiMnTG9GVuNnvxiKVM+9UoRaCjMXaGOxwP9KoWYSWh3eSAWwdhRrQooI9RkY5dhhB+s7wOWmkfWLzLFeSd+5MiTeYTZWUjAQ7HGXNEZVqvjCF8tJVl0g+iHd5s7le1Uaz2jbHx5FQJCW1oRi+eQu28AxUxbQpn7IkMfx4r5NRL3qH9Buem3p8cCcFndEu94g2tAX8sACqQKdboB41PR31im5cz3LD3TCKNUP8kDx1+w9igIZolzVP9Olydi16UtHpGTOwi5iNVPXyCrRF4BAZoI9sA89CN115BLJzdtalykSWCnHWZuWTa2CwpXD67mBDuK+LOWQdt1QcfxdGnhIE2L/5RtP7qX2LeBUJ3IIwH3itYnOSuGFsVEbIvaIhfICQJA6IhTynH/GBYQeCP4wAbdjO/5pKAEVlJLilGxp8AGdx19I2KLWGXfC22UD+SDd+QeOmds5BliuH/ji6BsxRE92bRA7Oqb9oTm9jWT5bxB+OfxHTlSag11jh+Fmuj99awOhBjnvQK6GYahiZNMJE0UbtXvGXi8oBAYhwuJQF+ooJiqlGo4k2OYGk0LmHbNz1hWYwGkhM1yyZfaY2CtCu37Mh/rxaADBtFfGQIcXHtYYD9Vzcbs/AZvuQMiM/hJW9OgDVLl8/azzWi6FZ6lNZFdtuOMbphqM14OH/kSCbznPQODj7ZjmtPHi6NR6BjGzRF/T+jkkb1fYvdgeFTs="
+      },
+      {
+         "hotel": {
+            "hotelId": "39480304",
+            "name": "Hotel Indigo Lower East Side",
+            "brandId": "92403",
+            "starRating": 3.5,
+            "location": {
+               "address": {
+                  "addressLine1": "171 Ludlow Street",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10002",
+                  "phone": "+1212-237-1776",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -73.98749,
+               "latitude": 40.72171,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3017",
+               "neighborhoodName": "East Village - Lower East Side",
+               "cityId": 3000016152,
+               "zoneId": "51959"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/39480/39480304/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "PETALLOW",
+                  "FINTRNT",
+                  "FINTRAVL"
+               ]
+            },
+            "overallGuestRating": 0,
+            "totalReviewCount": 0,
+            "chainCode": "IN",
+            "ratesSummary": {
+               "minPrice": "315.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "pclnId": "FF1725DAC5672DE007A2ABEEE1EDD61B5D47D6FE9741E64D4EEB856E05E0DDF9",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "roomLeft": 5,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 74314721,
+         "details": "Guest rooms, artwork and furnishings are inspired by the spirit of the LES. Get a 360 view from our rooftop restaurant, bar & pool",
+         "detailHeadline": "Explore & Discover the Hotel Indigo LES.",
+         "hotelImage": "",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW4d0DLSK/2Cc/8G/s3k2C4Kf1h/khDCB3uw8taRje9viof7TwmWXg1zKlVKTZW96bSfABDvHyh+/wavc1VRhBAIMJc3fKQRmEO8D3EQKbr6KgSJ2X7+xbhGopYrW696F/wapY+jdHnpzxkZpbGlxG4uu0IbXvZP1wZ83X/fe3avgzrUqEZXR9RC+I/VkziCVdzSpl0lSV3CWMTSP9M2QwTfkczXykV+dMV6fQHISLE3c2N6nJdpMP2idErv69VgSvKDjTrVdElDDD94ke8fKmdUV0EOUSPw/gF1XIpLdUL3jJZrO1Vp1oSUsoIVCvqbl+/xGeWJPaZWSNqPaTCNGN08Mitbtc/S74x6Yd4WhgxSAkWDkN66rwEtDSbQkiaFBMNVeBFBBUzWjaWBGVEyuNGzC1EK/qbI4Nf1SS/Z5WZNLy1kX2iq3njQICjJz6RxkRi6NYFexmsYRrv1NzAT7f/nZUHY1uk3nR10CRk77sC0E8umWvuxAKycUSNCr4RqpEFlVmWQM+e2oOzpo0IxvANMGVtZEooDx5gfK+cUKoF3Y/ARlgnqQEWwDuOjgyHYKwKXiuv2R2uxuBK4SL/0uMZvIrXE3/9Gb8Vv9qs23wU1RIYqrmk9OC4FFomJ6C69M4UcEnWBxJhdjgFgPR+BufJ77gRW+izuLsCAYVx9rJQXn3IShp1TZPecgOwPT4pPq/Ro4+oLb5RQab4cn4kmiv+1747aOO8WCvd+1IfCG2PZpUILpGLQGXUNDpOTUvT7m6CAsdPuk2b9Wntf+RVX0EP4K11WDDGwSF2QqiYg/PJgyzodjmpA1TXlNrA0Zega+tecDERrwn6TnBSKSrWrKftDWdeQMKJ1XWcWDxCAjqBfjhYXetDZ/cJZs4cfhgs8Wy9/FnEiFZ7S0pY3/4z7fftWqdEjpmgOoNKEi15zAAocSVdg9JN86SamSFq2ZRW5e2E/6i75BTO2J5aGrUy2PbqHSFJUdNy8taA/j6lGPn4uY8="
+      },
+      {
+         "hotel": {
+            "hotelId": "41902104",
+            "name": "Even Hotel New York Times Square South",
+            "brandId": "57",
+            "starRating": 4,
+            "location": {
+               "address": {
+                  "addressLine1": "321 West 35th Street",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10013",
+                  "phone": "800-4394745",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -73.99401,
+               "latitude": 40.75329,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3010",
+               "neighborhoodName": "Midtown West",
+               "cityId": 3000016152,
+               "zoneId": "51142"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/41902/41902104/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "PETALLOW",
+                  "FINTRNT",
+                  "FINTRRM",
+                  "FINTRPUB",
+                  "NSMKFAC",
+                  "HANDFAC"
+               ]
+            },
+            "overallGuestRating": 0,
+            "totalReviewCount": 0,
+            "chainCode": "VN",
+            "ratesSummary": {
+               "minPrice": "397.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "pclnId": "3D9BDD163484F17E71113B59F8B173CE547B4B0C481CB0063F63B7662EE08ADD",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 74379830,
+         "details": "Includes in-room fitness zone, healthy F&B options, and Premier Athletic Studio. Steps away from Penn Station, MSG & Javits Center",
+         "detailHeadline": "First Lifestyle Wellness Hotel in NYC.",
+         "hotelImage": "",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW4goA0EMPB4ePq1kIUgHHhykuGPZRb4nudzhhv6+VI1Tt9Jh4qz4TiYvs+6rYlgdXolIwo+XhYc21BnFJuayXEbi/vNGyWEm0Nyif6V1GiCwvqtGaHX+G1WPrLVYwCwpVu5Y7DQrQxae6ETjV8R7ZsMCTp7qcPM3zfsV+VjfshVdtO4CMUVxbAd/8pZ9iGn9WDKt7PW3GnbEjOroC5/pF3ZHhLz3XLRzHCyQl38uphaef5CV0bYlarMJWqTc90lPTzKcn+o/WHjjb2ShOj7IT6SLwkcL3Yn3IOIXFWy4Di3U1XemY2Ma4WoHkr6Ayrp4C5L8rCrAjxstkQiD9aUdrogMduJYXDtn/xp3QGESNW78PSbBJR1WGQgpjWTPB5ha5wOYDK3b7XpU7KjjIYVmWaeN+oTIjP1SsDydeGFLFCesXP4mtFvdeHffmCDTJ4fTPt/d9gDW02WFdjblF8trThwm6K8BRsXUvDPWUAWXP6TvuW4WSxt1Cg6FCTOzTOisZ9cylqSWt3R7NYYRFiuhW9dV3u0JvvQGY+b8ez+IbYRh/UT9C5VDsNnc7gKsGsluB/cDRqxfGt097IBR4m6kPcrKI8G106+inoY1mP0vbWvDLVsTg03gqCBFytw6q+S2ShuJvL97VbeXEZVBUNn70i7Hn0aiMEpfT5JMcOys+bc4LwpnYZ9eiB1+WWMGwa/XjEUz1/ORrxdNXuPvbmHdiGvW4nrIKc0vODS/Aud4fy4g/ftIidRyk9nNxw+eQYNho39HEUqFLJ+TQ5XWKki9JS4td0IhqTW6OGMVizkNM6Tr9uzOzr3EZo8eGbmCrUAHFx3WTDOlf6VLQaFEfRhnhlZyINyjbdEiHrD7Z1W+7QdgJi8d1AE2/wFnuStkCmo3homtnrdNqorbh4TQBTGZBsQB6x6k6yK9zG8YpaBBUzvKPVahwv3hNcPk2Bd2c2PmfMbowBrxyO8IfzL5vAzHSVYNF3+C9x+KKXngdCqxqnSTI="
+      },
+      {
+         "hotel": {
+            "hotelId": "10400703",
+            "name": "Courtyard New York Manhattan/Soho",
+            "brandId": "16",
+            "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1229802&ids=145062",
+            "starRating": 3.5,
+            "location": {
+               "address": {
+                  "addressLine1": "181 Varick Street",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10014",
+                  "phone": "212-414-8282",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -74.00548,
+               "latitude": 40.727585,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3018",
+               "neighborhoodName": "Soho - Tribeca",
+               "cityId": 3000016152,
+               "zoneId": "51958"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/10400/10400703/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "BUSCNTR",
+                  "RESTRNT",
+                  "FINTRNT",
+                  "FINTRRM",
+                  "FITSPA",
+                  "FINTRPUB",
+                  "NSMKFAC",
+                  "HANDFAC"
+               ]
+            },
+            "overallGuestRating": 8.9,
+            "totalReviewCount": 174,
+            "guestReviewGdsName": "PCLN",
+            "chainCode": "CY",
+            "ratesSummary": {
+               "minPrice": "569.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "pclnId": "88A76268271515A09A91EF3C9FBC9928FCC2DE80778596B37BC1848C126F241D",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "availablePromos": [
+                  {
+                     "type": "VALUE_ADD",
+                     "title": "Added Value",
+                     "desc": "Holiday Gift for You - $20 Hotel Credit, Thu-Fri",
+                     "terms": "Promotional rates are valid for reservations booked 10/30/15-12/30/2015 for stays 11/13/2015-1/18/2016 at participating JW Marriott®, Autograph Collection®, Renaissance®, Marriott Hotels, Gaylord Hotels®, AC Hotels®, and Courtyard Hotels®. Offer availability varies by participating hotel & resorts; Thursday ¿ Sunday at hotels and 7 days a week at Resorts. Hotel Credit is available to use in select hotel food and beverage outlets, golf and spas and varies at each participating hotel & resort.  Cannot be applied to room rate, resort fees or be redeemed for cash.  Tax will be applied as required by law.  The hotel credit adjustment is inclusive of all applicable taxes and service charges in the departments/outlets in which the hotel credit may be applied. Offer not applicable to groups of ten or more. Must quote promotional code 5AH to receive the promotional rate. A limited number of rooms are available and blackout dates or other restrictions may apply. Participating locations only. Some hotels may not be available at the rates shown. Promotion cannot be combined with any other offer, sale promotion, or prior purchase/reservation. Void where prohibited. © 2014 Marriott International, Inc.",
+                     "valueAddDesc": true,
+                     "discountPercentage": 0,
+                     "showDiscount": false,
+                     "freeNightCumulative": false,
+                     "numNightsPerFreeNight": 0,
+                     "numFreeNightsGiven": 0
+                  }
+               ],
+               "roomLeft": 5,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 15892691,
+         "details": "Contemporary guest rooms, located steps from Greenwich Village, NYU & Chinatown. Onsite dining at Table 181 & Free WiFi throughout",
+         "detailHeadline": "Trendy SOHO Hotel Near NYC Attractions",
+         "hotelImage": "https://images.flexrez.com/images/thumbnails/10/10400703.jpg",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW420HqkkmzCGJdhdR1ZtWkjRiaLxmi+OQKEQZKRrZI6KCJwbeEB6mzy2J3m9z7O4XfGqELjQf+1ZBRztkX9cWNiWCzRf6mhSn77lqGuEVtPQ4DP8oKj9OssC3giMCRZ4tVgWTJSzinFgC3l/nkWaewNuFIWvywipgvJQY7Z1Unh/pGvRt/eAcz8utKc+KqylwS+hGEqJ1eZyQwOQ6Hreysz0DG2r349xzuosc1ymh6SK1re7YOx26JtDpEE+ieXQn1Q5nwxw6HZCX7gCx7X0Druk/kmHKcSDurBRbyJCUe9P778Xo4/ZGnSkRPWN5tXNo3HufkCifY7de8+7pyoziZ6Ft6lD3whFTR5Z8a7rLMaPb/4viuTJUmF0PQydm3hCQ5zPYmihKbS6IHdiAudf24/NQd3K5sZ8djdrfLdBcAAuLqCvXgSEV5V0htkTt5p8Dgp3aXf3Q1UprCZQbQ1zY8njmLRgtRGjvpB3BbhESV27S9e6MlWuaWpDNzd5UFdJQRaxYTI3AYsc/Cy++u0Yr+pUmHEqMtqk9whCOiWRc9MIMqbWS59asnvLHo30C1EXNU7reA1/8W5dTtiaIrsF14RfjH3swsuAKlDOEAHo1vMo9dbxtGhayg+F3F+m/Ar8SluPK22xkWmANyGFW0frR/COQiMboVNUV0j7cS2Lmoew0By5DPGHdYwK4UPvhZy/Oin53JlDBBlmZn+sbwlwFg0Ob2GICKoQxJmjylNab2h71JUemcxvcRpncsr3dNRugFH93h8jW1S5BiwSZd4501r7SP96XYWHuAoRJYR/SkotpDZCaK4ivd+78XqmLxCwWK5mdflDNYhYrt4ZOuTdDFG7N34h8IbFU6e+stYyVP2iomyn4oLeNakzZK40ASBWCjwHREwZwYx9yA9KE2CjeVAw4eXVpY0S46dWLoGfCJkY2Gce/CDcLYFAAfjwXQGOQKKb5nfvJXLmWfadhdpXUI9b7ZUphPX3QFdbj7Ez4tmtA="
+      },
+      {
+         "hotel": {
+            "hotelId": "32551605",
+            "name": "Courtyard by Marriott New York Manhattan/Herald Square",
+            "brandId": "16",
+            "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1295182&ids=145062",
+            "starRating": 3.5,
+            "location": {
+               "address": {
+                  "addressLine1": "71 West 35th Street ",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10001",
+                  "phone": "212-239-4569",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -73.98629,
+               "latitude": 40.750076,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3013",
+               "neighborhoodName": "Grand Central - Empire State Building",
+               "cityId": 3000016152,
+               "zoneId": "51143"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/32551/32551605/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "RESTRNT",
+                  "FINTRNT",
+                  "FINTRRM",
+                  "FITSPA",
+                  "FINTRPUB",
+                  "NSMKFAC",
+                  "HANDFAC"
+               ]
+            },
+            "overallGuestRating": 8.8,
+            "totalReviewCount": 168,
+            "guestReviewGdsName": "PCLN",
+            "chainCode": "CY",
+            "ratesSummary": {
+               "minPrice": "469.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "pclnId": "B98AFF88BA012F2FBFAFF7A55B5C677BF30F05E4AA0A03AEED23CD6BEADD1B89",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "roomLeft": 5,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 16145479,
+         "details": "Located in Herald square, steps from Macy's & the iconic Empire State Building. Enjoy Starbucks coffee & free WiFi.",
+         "detailHeadline": "Spacious Guest Rooms, Terrific Location ",
+         "hotelImage": "https://aff.bstatic.com/images/hotel/square60/205/20590124.jpg",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW4BxRaYNAl2vg8EDIGsJ7XV58znbWm9el8aBArjpOsi5Ov74XUb94hm924lK03ZK3nV/vEO6alA8wLf7yXp6eoGM71aHgxXFvyKTW2BwA8D2LvxcWS/P/jZ54rJ28qY/I8RhilyD61VdmNfuNFs7JtkT2JAB+BdnzWl8M44x7SCANlcu/Q2R85nAXPEC6TttKEOZrER+B6meda11HLlJlTQq1T++Evnu+y9Hd0pQ2OrLxfI16vBemS0JFN2gRa9B95BVO0zBpufoqMQDj1YDNriDPCuFftEIGRxLoAUj+meJnLfYnsMrwFpIjIln9N+K+cL4iImvdIY4NhvKvZC2jNcPa800K4S5pLvTnuTJofpSCUa3Gp5jARhF8fKsDFm5L7V4No8UHBLnPAQg7p3qfALlIq17ANQt+AUV1VHhnDpenLuL6c9M0HtiolMoY0/uqyanTdCj9VI8MCe3v2kd55HIbDNqhycY8hXOwyeVLbrpdG55kbQRPEhTTJ7F5gIY6hnR9snexk7QEsHPFLyJIhZzxlYdmOGqZwvIRRLvPvn8N3bOdGh9UWUST6I/HabGqICR3pX/GHN1OQ/phux6y2RUfsXM9qfWY8vbAK6PfZ8noKXQS9+XWhGcXzw8IHK3XBhsRljLBeiOuIVur7GjJceYABxdAQlV9xHdNsQrj1KV3l0Bn/BCsdWZ3zs3lV/ldO/T/DaT5vxHSFztS/zWtE+fAPVazTsYMUnqMcrhOZ2hrzLxeBnB/mTrlNk1fI0GQutYZYRYlrj7vJl/sskUNNSgTQ4pVeVmWvTTMIfKilQTHT0zGckA17xZ4SFNJ6I4MYLVcHzk2EzVI+8X4RFQDuzT2HSBo0nZ79HndFAXf50pZ2zaQLwnEJlLa9hTdTc8SVvuCiwkmIAwVOvXe3fpEumjYwoqVnT2HuexWO1NJbC1umNjXYJm71zWhmemwl8liTuMqQKyFPOIJm9nW32UDr4IPJJOu8zU0YdIKJz2WGx9M="
+      },
+      {
+         "hotel": {
+            "hotelId": "60452",
+            "name": "Courtyard By Marriott Midtown East",
+            "brandId": "16",
+            "hotelVirtualTourURL": "http://www.vfmii.com/exc/aspquery?command=invoke&ipid=1067760&ids=145062",
+            "starRating": 3.5,
+            "location": {
+               "address": {
+                  "addressLine1": "866 Third Avenue",
+                  "cityName": "New York",
+                  "provinceCode": "NY",
+                  "countryName": "United States",
+                  "zip": "10022",
+                  "phone": "212-644-1300",
+                  "isoCountryCode": "US"
+               },
+               "longitude": -73.9694,
+               "latitude": 40.7577,
+               "timeZone": "America/New_York",
+               "neighborhoodId": "3012",
+               "neighborhoodName": "Midtown East",
+               "cityId": 3000016152,
+               "zoneId": "3910"
+            },
+            "thumbnailUrl": "http://mobileimg.priceline.com/htlimg/60/60452/thumbnail-150-square.jpg",
+            "hotelFeatures": {
+               "hotelAmenityCodes": [
+                  "BUSCNTR",
+                  "RESTRNT",
+                  "FINTRNT",
+                  "FINTRRM",
+                  "FITSPA",
+                  "FINTRPUB",
+                  "NSMKFAC",
+                  "HANDFAC"
+               ]
+            },
+            "overallGuestRating": 8.9,
+            "totalReviewCount": 293,
+            "guestReviewGdsName": "PCLN",
+            "chainCode": "CY",
+            "ratesSummary": {
+               "minPrice": "439.00",
+               "minCurrencyCode": "USD",
+               "minCurrencyCodeSymbol": "$",
+               "pclnId": "E21A313DCA51FE8F5BECF12CC4E446C4DBCDBBDFE48D66DB",
+               "freeCancelableRateAvail": true,
+               "payWhenYouStayAvailable": true,
+               "roomLeft": 5,
+               "ccNotRequiredAvailable": false
+            },
+            "allInclusiveRateProperty": false,
+            "recentlyViewed": false,
+            "dealUnwrapable": false
+         },
+         "adId": 68004852,
+         "details": "Enjoy modern amenities close to restaurants & NYC cultural attractions. Walk to Grand Central Station, Rockefeller Center & more.",
+         "detailHeadline": "Contemporary Guest Rooms, 40% Larger",
+         "hotelImage": "https://images.flexrez.com/images/thumbnails/60/60452.jpg",
+         "trackingData": "Pg2ogK/L+6zuMd43bu3MceWHIho55I8Mpr2oXsPKBc6k7bIb9trffPE9p+Jt0Rtx7fpMwj3DOa22DhtBdYFYzzI1qPZ44SW4SH949R4O6N2fqy1By4/JV2dDYUhXRWeANfqa4BNiy1+WIfMRfU9GdMSNLdkswvW0/udY8MjaiehV8DfZgU/fM6G3Rn9x3CBYtBLkJVjuQrxOnRCfhvltBOqFOuqCuYi7aLIpIj9ZVJOK9rA9+SGh0nlb2cLUtA5EEjr2N57YTK/Nx0e7mfK7HrTZJ0bjMr2gWNter4d54cKY+ak48tf6mm4XZ7hgQVDUqPQMOgioZ9j69NnnzB5qW2IqZ3UeekJxsdC6TZWjVTqkS13ObeHuIc7CvE3OIgiNnsx1Q7xXsBXS5Zvyfd4B4jhI6PNxRxqAm2Q6wLn6D6tJwdTvCOskLCSnt1J136vKIPXXSpDnVwxil/A0Wft2u0JimROmyPbB1+V3EhX72FEd1PNrtdzxCMId0LWjdYumNVXFGE31roLhlxCroO1x9QM4c+pG5vucE3z81j+78l3ynkMyzwMsMoaUkyTFWmSRpsVa3x9QQPJyvfr+nPVZ4p9EgYHdiUiXCMom0KnCllhIm+plwEiCXVl3gyT5lWhpJd/bGatHfZEyuejFbKpCf+cAZAN5qm3LErHXuFiiliMFZWDPdLX5XwqG7tvhjlQrazdr2aPyAGo7nCLFpoGkj8NF/NFo/tcx7V4kQzRhlIQU4KdW7srVVrCk02zGAEl65Qc1UXbdZDk6OLIobq9GAQ4/tlhsl+QITTElbGDtLUNXEjFIhodOYBsJ6v+elWfEDklzq7DYTsn2SnlUzdvoBkfqS4G4Tim0x1UwrO3wc2vE1l6nRi+HzI0Nd1MB/o4h/JaOnqiQ61RvcE/0VCRoMmOkqnXm8egfqFOa6PIKJvsg1bs1XrEXDiL8osAH/wrsacB9QBdXAKuKM+fgQv830dziG5ebwPG+boflYCSUOJ+YeZR+U9L8LNTwy49Q9dMBFGgQexosXWHAmR5kZlXIaVux3aOf/wUuCwEV7ppyWGF7diviZd4y/kQOzvv2uX6EJsQcg5MDEp0="
+      }
+   ],
+   "tripFilterSummary": {
+      "totalSizeFiltered": 546
+   },
+   "cityInfo": {
+      "cityId": 3000016152,
+      "cityName": "New York",
+      "stateCode": "NY",
+      "stateName": "New York",
+      "countryCode": "US",
+      "countryName": "United States",
+      "areaId": 55,
+      "lat": 40.825745,
+      "lon": -73.909065
+   },
+   "signInDealRelatedInfo": {
+      "promptUserToSignIn": false,
+      "numberOfAvailableSignInDeals": 0
+   }
+}
