@@ -44,9 +44,9 @@ hotelsWithMapInfo.forEach(function(hotel) {
     name: hotel.name,
     hotelPrice: hotel.hotelPrice,
     hotelRating: hotel.hotelRating,
-    foodRating: getFoodRating(hotel),
-    tourismRating: getTourismRating(hotel),
-    transitRating: getTransitRating(hotel),
+    foodRating: getFoodRating(hotel.restaurants),
+    tourismRating: getTourismRating(hotel.numPointsOfInterest),
+    transitRating: getTransitRating(hotel.transit),
   };
 
   hotelsWithRating.push(hotelWithRating);
