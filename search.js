@@ -6,7 +6,6 @@ function enter(){
 	$("#locationTextBox").val('');
 	$("#locationTextBox").attr("placeholder","");
 
-	
 	var startPoint = $(".hotelInformation");
 	var answer  = "";
 	staticData.forEach(function(elem, index){
