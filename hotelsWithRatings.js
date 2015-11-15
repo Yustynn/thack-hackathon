@@ -4,12 +4,14 @@ var getHotelsWithInfo = require('./getHotelsWithInfo'),
 
 // divisors for ratings
 var FOOD_RATING_DIVISOR = 5,
-  TRANSIT_RATING_DIVISOR = 5,
+  TRANSIT_RATING_DIVISOR = 3,
   TOURISM_RATING_DIVISOR = 5;
 
 
 getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
+
   var hotelsWithRating = [];
+  hotelsWithMapInfo = JSON.parse(fs.readFileSync('./unfinal.json'));
   // takes array of restaurants, returns food rating number (out of 5)
   function getFoodRating(restaurants) {
     // take out restaurants < 3.5 stars
@@ -23,12 +25,8 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
 
   // takes array of transit options (buses/trains) within 1 mile,
   // returns transit rating number (out of 5)
-  function getTransitRating(transit) {
-    transitSum = transit.reduce(function sum(runningTotal, nextAddend) {
-      return runningTotal + ( 1 / nextAddend.distance)
-    }, 0);
-
-    var rating = transitSum / TRANSIT_RATING_DIVISOR;
+  function getTransitRating(transitOptions) {
+    var rating = (transitOptions.length / TRANSIT_RATING_DIVISOR).toFixed(1);
     return rating > 5 ? 5 : rating;
   };
 
@@ -40,7 +38,7 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
     return rating > 5 ? 5 : rating;
   };
 
-  fs.writeFileSync('./unfinal.json', JSON.stringify(hotelsWithMapInfo));
+  // fs.writeFileSync('./unfinal.json', JSON.stringify(hotelsWithMapInfo));
   // takes array of restaurants, returns food rating number (out of 5)
   hotelsWithMapInfo.forEach(function(hotel) {
     // console.log(hotel);
@@ -59,5 +57,4 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
     hotelsWithRating.push(hotelWithRating);
   });
   fs.writeFileSync('./final.json', JSON.stringify(hotelsWithRating));
-  console.log(hotelsWithRating, 'Written a bitten too litten');
 });

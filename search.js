@@ -7,7 +7,6 @@ function enter(){
 	$("#locationTextBox").val('');
 	$("#locationTextBox").attr("placeholder","");
 
-	
 	var startPoint = $(".hotelInformation");
 	var answer  = "";
 	staticData.forEach(function(elem, index){
@@ -23,7 +22,6 @@ function enter(){
         answer = answer + "<div class='col-md-2 even listing details'>" + elem["hotelRating"] + "</div>";
         answer = answer + "</div>"
 	});
-	console.log("fasdf",answer);
 	startPoint.append(answer);
 
 
