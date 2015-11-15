@@ -1,11 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 .hero {
-  padding-top: 50px; }
-
+  padding-top: 50px;
+}
+#hotelImage{
+  right: 150px;
+  top: 50px;
+  position: absolute;
+}
+  
 body {
-  padding-bottom: 100px; }
+  background: #3498db;
+  padding-bottom: 100px; 
+}
 
 h1 {
-  color: #828282;
+  color: #ecf0f1;
+  font-family: "Roboto", sans-serif;
   line-height: 1em;
   padding-bottom: 30px;
   font-size: 5em;
@@ -18,10 +28,67 @@ h1 {
   line-height: 1em;
   width: 40%; }
 
-#input-location {
-  padding-top: 100px; }
+.listing{
+  padding: 50px;
+}
 
+.col-md-2{
+  height: 200px;
+}
+
+.col-md-8{
+  height: 200px;
+}
+
+.food{
+  left: 10%;
+  position: absolute;
+  margin-top: 7%;
+}
+.transit{
+  left: 50%;
+  position: absolute;
+  margin-top: 7%;
+}
+
+.tourism{
+  right: 10%;
+  position: absolute;
+  margin-top: 7%;
+}
+
+.even{
+  background: #ecf0f1;
+
+}
+
+.hotelInfo{
+  color: black;
+  font-weight: bold;
+}
+
+h4{
+  margin-top: -3%; 
+}
+
+.odd{
+  background: #ffffff;
+} 
+
+.col-md-2{
+  background: #f1c40f;
+}
+
+#input-location {
+  padding-top: 100px; 
+  margin-bottom: 300px;
+}
+  
+#locationTextBox::-webkit-input-placeholder{
+  color: white;
+}
 #locationTextBox {
+  background: #3498db;
   border: none;
   border-bottom: 3px solid #81CFE0;
   border-radius: 0;
@@ -34,9 +101,9 @@ h1 {
 
 .btn-outline-orange {
   background: none;
-  border: 2px solid #F5A623;
+  border: 2px solid #f1c40f;
   border-radius: 10px;
-  color: #F5A623;
+  color: #f1c40f;
   display: inline-block;
   margin-left: 30px;
   font-size: 18px;

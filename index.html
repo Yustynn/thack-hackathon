@@ -34,26 +34,50 @@
   <body>
     <!-- super-wrapper helps keep the footer to the bottom of the page -->
     <!-- <div id='super-wrapper'> -->
-      <div class="container">
-
-        <div class="hero">
-          <h1>what's around</h1>
-          <p class="lead">It's what's on the outside that counts.</p>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="hero">
+            <h1>WHAT'S AROUND</h1>
+            <p class="lead">It's what's on the outside that counts.</p>
+          </div>
         </div>
-
-        <div id='input-location'>
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" id="locationTextBox" placeholder="enter a city or zipcode">
-              <button type="submit" class="btn btn-outline-orange">#BLASTOFF</button>
+        <div class="container">
+          <div id='input-location'>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="locationTextBox" placeholder="enter a city or zipcode">
+                <button type="submit" class="btn btn-outline-orange">#BLASTOFF
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+            <div id= 'hotelImage'>
+              <img src="./static-assets/images/hotels.png" alt="hotels" height="400" width="500">
             </div>
-          </form>
         </div>
-
-      </div><!-- /.container -->
-
-      <footer>
-      </footer>
+        <div class="row-group text-center">
+          <div class = "even">
+            <div class="col-md-2 even listing hotelImage">IMG</div>
+            <div class="col-md-8 even listing hotelInfo"><h4>Hotel Info</h4>
+              <div class = "food"><img src="./static-assets/images/food.png" alt="food" style="width:40px;height:40px;"></div>
+              <div class = "transit"><img src="./static-assets/images/transport.png" alt="food" style="width:40px;height:40px;"></div>
+              <div class = "tourism"><img src="./static-assets/images/tourism.png" alt="food" style="width:40px;height:40px;"></div>
+            </div>
+            <div class="col-md-2 even listing details">Details</div>
+          </div>
+          <div class="odd">
+            <div class="col-md-2 odd listing hotelImage">IMG</div>
+            <div class="col-md-8 odd listing hotelInfo"><h4>Hotel Info</h4>
+              <div class = "food"><img src="./static-assets/images/food.png" alt="food" style="width:40px;height:40px;"></div>
+              <div class = "transit"><img src="./static-assets/images/transport.png" alt="food" style="width:40px;height:40px;"></div>
+              <div class = "tourism"><img src="./static-assets/images/tourism.png" alt="food" style="width:40px;height:40px;"></div>
+            </div>
+            <div class="col-md-2 odd listing details">Details</div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
     <!-- </div> -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
