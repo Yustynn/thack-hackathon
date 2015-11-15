@@ -14,7 +14,7 @@ function promisifyHotelInfoRequests(hotel) {
 	return promisifiedHttpsGet(requestUrl)
 		.then(function resolve(stuff) {
 			hotel.restaurants = getRestaurants(stuff);
-			// requestUrl for subways
+			// requestUrl for points of interest
 			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
 				+ hotel.latitude + "," + hotel.longitude
 				+"&radius=" + 1000
@@ -23,6 +23,7 @@ function promisifyHotelInfoRequests(hotel) {
 			return promisifiedHttpsGet(requestUrl)
 		})
 		.then(function resolve(stuff){
+			// requestUrl for subways
 			hotel.pointsOfInterest = getPointsOfInterest(stuff);
 			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
 				+ hotel.latitude + "," + hotel.longitude
