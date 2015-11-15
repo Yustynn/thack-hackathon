@@ -23,7 +23,6 @@ function promisifyHotelInfoRequests(hotel) {
 			return promisifiedHttpsGet(requestUrl)
 		})
 		.then(function resolve(stuff) {
-			console.log('entered subway area')
 			hotel.subways = getSubways(stuff);
 			return hotel;
 		})
@@ -52,7 +51,6 @@ function getRestaurants(body) {
 
 function getSubways(body) {
 	var subways = { stations: [] };
-
 	var unfilteredStations = JSON.parse(body).results;
 
 	unfilteredStations.forEach(function(unfilteredStation){

@@ -34,7 +34,7 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
 
   // takes num of points of interest within 2 miles,
   // returns tourism rating number (out of 5)
-  function getTransitRating(numPointsOfInterest) {
+  function getTourismRating(numPointsOfInterest) {
     var rating = numPointsOfInterest / TOURISM_RATING_DIVISOR;
     return rating > 5 ? 5 : rating;
   };
@@ -47,7 +47,7 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
       hotelRating: hotel.hotelRating,
       foodRating: getFoodRating(hotel.restaurants),
       tourismRating: getTourismRating(hotel.numPointsOfInterest),
-      transitRating: getTransitRating(hotel.transit),
+      transitRating: getTransitRating(hotel.subways.stations),
     };
 
     hotelsWithRating.push(hotelWithRating);
