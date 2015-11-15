@@ -2,7 +2,6 @@ var staticData = [{"name":"Hotel Pennsylvania","hotelRating":4.9,"foodRating":3.
 
 
 function enter(){
-	console.log("clicked the submission");
 	var input = $("#locationTextBox").val();
 	$("#locationTextBox").val('');
 	$("#locationTextBox").attr("placeholder","");
@@ -14,16 +13,15 @@ function enter(){
 		console.log("here");
 		var position = index % 2 === 0 ? 'even' : 'odd';
 		answer = answer + "<div class="+ position+ ">";
-		answer = answer + "<div class='col-md-2 even listing hotelImage'>"+ "<img id='theImg' src='" + elem["thumbnailUrl"] + "' />"  + "</div>"
-		answer = answer + "<div class='col-md-8 even listing hotelInfo'><h4>" + elem["name"] + "</h4>";
+		answer = answer + "<div class='col-md-2 "+ position +" listing hotelImage'>"+ "<a target='_blank' href='" + elem["url"] + "'><img class='theImg' src='" + elem["thumbnailUrl"] + "' /></a>"  + "</div>"
+		answer = answer + "<div class='col-md-8 " + position +" listing hotelInfo'><h4>" + elem["name"] + "</h4>";
         answer = answer + "<div class='food'><img src='./static-assets/images/food.png' alt='food' style='width:40px;height:40px;'>" +"<span>    "+ elem["foodRating"]+"</span>"+"</div>";
         answer = answer + "<div class='transit'><img src='./static-assets/images/transport.png' alt='food' style='width:40px;height:40px;'>" +"<span>    "+ elem["transitRating"]+"</span>"+"</div>";
         answer = answer + "<div class='tourism'><img src='./static-assets/images/tourism.png' alt='food' style='width:40px;height:40px;'>" +"<span>    "+ elem["tourismRating"]+"</span>"+"</div>";
         answer = answer + "</div>"
-        answer = answer + "<div class='col-md-2 even listing details'>" + elem["hotelRating"] + "</div>";
+        answer = answer + "<div class='col-md-2 even listing details'>" + "<a target='_blank'  href='" + elem["url"] + "'>Details</a>" + "</div>";
         answer = answer + "</div>"
 	});
-	console.log("fasdf",answer);
 	startPoint.append(answer);
 
 
