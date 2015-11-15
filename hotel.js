@@ -14,15 +14,16 @@ fs.readFile('./hotels.json', function(err, contents){
 >>>>>>> 28299a1fbe8e7339c927c437a8cc62ce1a1e8dcc
 
 var json = fs.readFileSync('./hotels.json', 'utf-8');
-var obj = JSON.parse(json);
+unfilteredHotels = JSON.parse(json)['hotels'];
 var hotelsArr = [];
-readObjectandAdd(obj);
+readObjectAndAdd(unfilteredHotels);
 
 //Initialize storage for all hotels
 
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 >>>>>>> 28299a1fbe8e7339c927c437a8cc62ce1a1e8dcc
 function readObjectandAdd(objHotel) {
     function readObjectandAddHelper(obj) {
@@ -51,6 +52,36 @@ function readObjectandAdd(objHotel) {
 }
 
 =======
+=======
+function readObjectAndAdd(unfilteredHotels) {
+    
+	unfilteredHotels = [].slice.call(unfilteredHotels, 0);
+	// console.log(unfilteredHotels)
+    unfilteredHotels.forEach(function(unfilteredHotel) {
+    	function readObjectAndAddHelper(unfilteredHotel) {
+	        var requiredKeys = ['name', 'location', 'starRating', 'minPrice', 'overallGuestRating', 'totalReviewCount', 'thumbnailUrl', 'hotelId'];
+	        for (var key in unfilteredHotel) {
+	            if (requiredKeys.indexOf(key) === -1) {
+	                if (typeof unfilteredHotel[key] === 'object') {
+	                readObjectAndAdd(unfilteredHotel[key]);
+	                }
+	            } else {
+	            	if(key === "hotelId"){
+	            		hotel['url'] = 'http://www.priceline.com/hotel/hotelOverviewGuide.do?numberOfRooms=1&from=rateSelectionDirect&propID='+unfilteredHotel[key]+'&noDate=Y';
+	            	}
+	                hotel[key] = unfilteredHotel[key];
+	            }
+	        }
+	    }
+    	var hotel = {};
+	    readObjectAndAddHelper(unfilteredHotel);
+	    //console.log(hotel)
+	    if(Object.getOwnPropertyNames(hotel).length !== 0){
+	    	hotel['minPrice'] = unfilteredHotel['ratesSummary']['minPrice'];
+			hotelsArr.push(hotel);
+		}
+    })   
+>>>>>>> fdf5997803b5a8b8461bb2b7e9e288e1b196814d
 }
 
 module.exports = hotelsArr;

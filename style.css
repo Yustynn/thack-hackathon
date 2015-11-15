@@ -32,16 +32,46 @@ h1 {
   padding: 50px;
 }
 
+.col-md-2{
+  height: 200px;
+}
+
+.col-md-8{
+  height: 200px;
+}
+
+.food{
+  left: 10%;
+  position: absolute;
+  margin-top: 5%;
+}
+.transit{
+  left: 50%;
+  position: absolute;
+  margin-top: 5%;
+}
+
+.tourism{
+  right: 10%;
+  position: absolute;
+  margin-top: 5%;
+}
+
 .even{
-  background: #ecf0f1 !important;
+  background: #ecf0f1;
+
+}
+
+.hotelInfo{
+  color: black;
+  font-weight: bold;
 }
 
 .odd{
-  background: #ffffff !important;
+  background: #ffffff;
 } 
 
-.detailsBox{
-  overflow: auto;
+.col-md-2{
   background: #f1c40f;
 }
 
