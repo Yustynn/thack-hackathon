@@ -4,29 +4,13 @@ module.exports = router;
 var keys = require("../apiKeys");
 var https = require('https');
 var Promise = require('bluebird');
-var requestbb = require("request-bluebird");
-// var request = require('request');
-// var promiseRequest  = Promise.promisifyAll(request);
+var hotels = require('../hotel.js');
 var request = Promise.promisify(require("request"));
 Promise.promisifyAll(https);
 
-//the object
-// var hotels = require("../hotel");
+console.log("WERWERWWWW");
+console.log(hotels);
 
-
-//TODO: Get the data into the right format to pass to yustynn
-//WHEN REASONABLY DONE, use promises to clean up
-//MY TODO format:{ name: hotelName, numPointsOfInterest, transitInfo:[], restaurant: [{name, rating, price, longitude, latitude}]}
-
-
-
-// { minPrice: '569.00' },   { name: 'Courtyard New York Manhattan/Soho',
-// starRating: 3.5,     location:      { address: [Object],
-// 	longitude: -74.005475,        latitude: 40.727583,
-// 	timeZone: 'America/New_York',        neighborhoodId: '3018',
-// 	neighborhoodName: 'Soho - Tribeca',        cityId: 3000016152,
-// 	zoneId: '51958' },     overallGuestRating: 8.9,
-// 	totalReviewCount: 174 },
 function evalHotelObj(allHotels){
 
 }
@@ -133,10 +117,17 @@ function getFoodByHotel(hotel,res) {
 			r["restaurants"].push(restaurant);
 		});
 		//this will then send back
-		getSubwaysCloseToHotel(hotel, res, r);
+		return getSubwaysCloseToHotel(hotel, res, r);
 	}
 
-	promisifiedHttpsGet(url + keys.key).then(theFunctionOfHom);
+	promisifiedHttpsGet(url + keys.key)
+	.then(theFunctionOfHom)
+	.then(function(){
+		promisifiedHttpsGet(url + keys.key).then(function(data){
+			console.log("IN my then");
+			console.log(data);
+		})
+	});
 }
 
 
