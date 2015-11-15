@@ -1,4 +1,5 @@
-var getHotelsWithInfo = require('./getHotelsWithInfo');
+var getHotelsWithInfo = require('./getHotelsWithInfo'),
+  fs = require('fs');
 
 
 // divisors for ratings
@@ -42,17 +43,25 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
 
   // takes array of restaurants, returns food rating number (out of 5)
   hotelsWithMapInfo.forEach(function(hotel) {
+    console.log(hotel)
     var hotelWithRating = {
       name: hotel.name,
-      hotelPrice: hotel.hotelPrice,
-      hotelRating: hotel.hotelRating,
-      foodRating: getFoodRating(hotel.restaurants),
-      tourismRating: getTourismRating(hotel.numPointsOfInterest),
-      transitRating: getTransitRating(hotel.subways.stations),
+      // hotelPrice: hotel.hotelPrice,
+      hotelRating: hotel.overallGuestRating,
+      thumbnailUrl: hotel.thumbnailUrl,
+      url: hotel.url
+      // tourismRating: getTourismRating(hotel.numPointsOfInterest),
+      // transitRating: getTransitRating(hotel.subways.stations),
+
     };
+
+    ['foodRating', 'tourismRating', 'transitRating'].forEach(function(key) {
+      hotelWithRating[key] = (Math.random() * 10).toFixed(1);
+    });
 
     hotelsWithRating.push(hotelWithRating);
   });
-
-  module.exports = hotelsWithRating;
+  
+  console.log(hotelsWithRating);
+  fs.writeFileSync('./data.json', JSON.stringify(hotelsWithRating));
 });

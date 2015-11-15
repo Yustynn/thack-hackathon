@@ -115,3 +115,12 @@ footer {
   height: 100px;
   position: absolute;
   width: 100%; }
+
+
+@media (max-width: 950px) 
+{
+    #hotelImage
+    {
+        display: none;
+    }
+}
