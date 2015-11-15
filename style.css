@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 50px; }
+
+body {
+  padding-bottom: 100px; }
+
+h1 {
+  color: #828282;
+  line-height: 1em;
+  padding-bottom: 30px;
+  font-size: 5em;
+  font-weight: bold; }
+
+.lead {
+  font-size: 2em;
+  font-weight: bold;
+  display: block;
+  line-height: 1em;
+  width: 40%; }
+
+#input-location {
+  padding-top: 100px; }
+
+#locationTextBox {
+  border: none;
+  border-bottom: 3px solid #81CFE0;
+  border-radius: 0;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  width: 30%; }
+
+.btn-outline-orange {
+  background: none;
+  border: 2px solid #F5A623;
+  border-radius: 10px;
+  color: #F5A623;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 600; }
+
+footer {
+  background-color: #E5E5E5;
+  bottom: 0;
+  height: 100px;
+  position: absolute;
+  width: 100%; }

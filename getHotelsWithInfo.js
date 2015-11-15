@@ -1,12 +1,7 @@
-var express = require('express')
-var router = express.Router()
-module.exports = router;
-var keys = require("../apiKeys");
+var keys = require("./apiKeys");
 var https = require('https');
 var Promise = require('bluebird');
-var hotels = require('../hotel.js');
-var request = Promise.promisify(require("request"));
-Promise.promisifyAll(https);
+var hotels = require('./hotel.js');
 
 function promisifyHotelInfoRequests(hotel) {
 	var hotel = hotel,
@@ -104,10 +99,6 @@ filteredHotels = hotels.map(function(unfilteredHotel) {
 	return hotel;
 });
 
-router.get('/nearby', function(req, res){
-	hotelsPromises = filteredHotels.map(promisifyHotelInfoRequests);
-	Promise.all(hotelsPromises)
-		.then(function resolve(hotelsWithInfo) {
-			console.log(hotelsWithInfo);
-		});
-});
+hotelsPromises = filteredHotels.map(promisifyHotelInfoRequests);
+
+module.exports = Promise.all(hotelsPromises);
