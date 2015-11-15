@@ -17,6 +17,15 @@ function promisifyHotelInfoRequests(hotel) {
 			// requestUrl for subways
 			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
 				+ hotel.latitude + "," + hotel.longitude
+				+"&radius=" + 1000
+				+ "&types=" + 'points_of_interest' +
+				"&key=" + keys.key;
+			return promisifiedHttpsGet(requestUrl)
+		})
+		.then(function resolve(stuff){
+			hotel.pointsOfInterest = getPointsOfInterest(stuff);
+			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
+				+ hotel.latitude + "," + hotel.longitude
 				+"&radius=" + 600
 				+ "&types=" + 'subway_station' +
 				"&key=" + keys.key;
@@ -48,6 +57,20 @@ function getRestaurants(body) {
 	return restaurants;
 }
 
+
+function getPointsOfInterest(body) {
+	var pointsOfInterest = [];
+	var unfilteredPointsOfInterest = JSON.parse(body).results;
+
+	unfilteredPointsOfInterest.forEach(function(unfilteredPointOfInterest){
+		var pointOfInterest = {
+			name : unfilteredPointOfInterest.name,
+			rating : unfilteredPointOfInterest.rating
+		};
+		pointsOfInterest.push(pointOfInterest);
+	});
+	return pointsOfInterest;
+}
 
 function getSubways(body) {
 	var subways = { stations: [] };

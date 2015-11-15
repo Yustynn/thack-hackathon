@@ -9,6 +9,7 @@ var FOOD_RATING_DIVISOR = 50,
 
 getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
   var hotelsWithRating = [];
+  console.log(hotelsWithMapInfo);
   // takes array of restaurants, returns food rating number (out of 5)
   function getFoodRating(restaurants) {
     // take out restaurants < 3.5 stars
