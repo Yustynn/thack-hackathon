@@ -3,14 +3,13 @@ var getHotelsWithInfo = require('./getHotelsWithInfo'),
 
 
 // divisors for ratings
-var FOOD_RATING_DIVISOR = 50,
-  TRANSIT_RATING_DIVISOR = 50,
-  TOURISM_RATING_DIVISOR = 50;
+var FOOD_RATING_DIVISOR = 5,
+  TRANSIT_RATING_DIVISOR = 5,
+  TOURISM_RATING_DIVISOR = 5;
 
 
 getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
   var hotelsWithRating = [];
-  console.log(hotelsWithMapInfo);
   // takes array of restaurants, returns food rating number (out of 5)
   function getFoodRating(restaurants) {
     // take out restaurants < 3.5 stars
@@ -25,8 +24,8 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
   // takes array of transit options (buses/trains) within 1 mile,
   // returns transit rating number (out of 5)
   function getTransitRating(transit) {
-    transitSum = transit.reduce(function sum(currentTotal, nextOption) {
-      return currentTotal + ( nextOption / nextOption.distance)
+    transitSum = transit.reduce(function sum(runningTotal, nextAddend) {
+      return runningTotal + ( 1 / nextAddend.distance)
     }, 0);
 
     var rating = transitSum / TRANSIT_RATING_DIVISOR;
@@ -41,27 +40,24 @@ getHotelsWithInfo.then(function loaded(hotelsWithMapInfo) {
     return rating > 5 ? 5 : rating;
   };
 
+  fs.writeFileSync('./unfinal.json', JSON.stringify(hotelsWithMapInfo));
   // takes array of restaurants, returns food rating number (out of 5)
   hotelsWithMapInfo.forEach(function(hotel) {
-    console.log(hotel)
+    // console.log(hotel);
     var hotelWithRating = {
       name: hotel.name,
-      // hotelPrice: hotel.hotelPrice,
+      hotelPrice: hotel.hotelPrice,
       hotelRating: hotel.overallGuestRating,
+      foodRating: getFoodRating(hotel.restaurants),
+      starRating: hotel.starRating,
       thumbnailUrl: hotel.thumbnailUrl,
+      tourismRating: getTourismRating(hotel.pointsOfInterest.length),
+      transitRating: getTransitRating(hotel.subways.stations),
       url: hotel.url
-      // tourismRating: getTourismRating(hotel.numPointsOfInterest),
-      // transitRating: getTransitRating(hotel.subways.stations),
-
     };
-
-    ['foodRating', 'tourismRating', 'transitRating'].forEach(function(key) {
-      hotelWithRating[key] = (Math.random() * 10).toFixed(1);
-    });
 
     hotelsWithRating.push(hotelWithRating);
   });
-  
-  console.log(hotelsWithRating);
-  fs.writeFileSync('./data.json', JSON.stringify(hotelsWithRating));
+  fs.writeFileSync('./final.json', JSON.stringify(hotelsWithRating));
+  console.log(hotelsWithRating, 'Written a bitten too litten');
 });
