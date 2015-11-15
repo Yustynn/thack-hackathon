@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()
 module.exports = router;
-var keys = require("../../keys");
+var keys = require("../apiKeys");
 var https = require('https');
 var Promise = require('bluebird');
 var requestbb = require("request-bluebird");
@@ -20,12 +20,12 @@ Promise.promisifyAll(https);
 
 
 
-// { minPrice: '569.00' },   { name: 'Courtyard New York Manhattan/Soho',     
-// starRating: 3.5,     location:      { address: [Object],        
-// 	longitude: -74.005475,        latitude: 40.727583,        
-// 	timeZone: 'America/New_York',        neighborhoodId: '3018',        
-// 	neighborhoodName: 'Soho - Tribeca',        cityId: 3000016152,        
-// 	zoneId: '51958' },     overallGuestRating: 8.9,     
+// { minPrice: '569.00' },   { name: 'Courtyard New York Manhattan/Soho',
+// starRating: 3.5,     location:      { address: [Object],
+// 	longitude: -74.005475,        latitude: 40.727583,
+// 	timeZone: 'America/New_York',        neighborhoodId: '3018',
+// 	neighborhoodName: 'Soho - Tribeca',        cityId: 3000016152,
+// 	zoneId: '51958' },     overallGuestRating: 8.9,
 // 	totalReviewCount: 174 },
 function evalHotelObj(allHotels){
 
@@ -51,7 +51,7 @@ function getSubwaysCloseToHotel(hotel, res, nearByEateries) {
 
 	https.get(url + keys.key, function (resp) {
 			//console.log(resp);
-			resp.on('data', function(d) {	
+			resp.on('data', function(d) {
 				body = body + d;
 			});
 			resp.on('end', function(){
@@ -79,7 +79,23 @@ function getSubwaysCloseToHotel(hotel, res, nearByEateries) {
 }
 
 
+var promisifiedHttpsGet = Promise.method(function(url) {
+	return new Promise(function(resolve, reject) {
+		var body = '';
+		https.get(url, function(res) {
+			res.on('data', function(data) {
+				body += data;
+			});
+			res.on('end', function logginBody() {
+				resolve(body);
+			});
+		});
+	})
+});
+
+
 function getFoodByHotel(hotel,res) {
+
 	var name = hotel.name;
 	var starRating = hotel.starRating;
 	var address = hotel.location.address['addressLine1'];//this is an object that needs to be parsed better
@@ -97,44 +113,73 @@ function getFoodByHotel(hotel,res) {
 	var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + latitude + "," + longitude +"&radius=" + radius + "&types=" + type + "&key=";
 	var body = "";
 
-	https.get(url + keys.key, function (resp) {
-			//console.log(resp);
-			resp.on('data', function(d) {	
-				body = body + d;
-			});
-			resp.on('end', function(){
-				//put together object to pass to the rendered view
-				var r = {};
-				r["name"] = name;
-				r["starRating"] = starRating;
-				r["address"] = address;
-				r["zip"] = zip;
-				r["neighborhoodName"] = neighborhoodName;
-				r["totalReviewCount"] = totalReviewCount;
-				r["restaurants"] = [];
-				var restaurants = JSON.parse(body).results;
-				// console.log(typeof restaurants);
-				restaurants.forEach(function(a){
-					var restaurant = {};
-					restaurant["restaurantName"] = a["name"];
-					restaurant["priceLevel"] =  a["price_level"];
-					restaurant["rating"] = a["rating"];
-					r["restaurants"].push(restaurant);
-				});
-				//this will then send back
-				getSubwaysCloseToHotel(hotel, res, r);
-			});
-	});
+
+	var theFunctionOfHom =  function(body) {
+		var r = {
+			address: address,
+			name: name,
+			neighborhoodName: neighborhoodName,
+			restaurants: [],
+			totalReviewCount: totalReviewCount,
+			zip: zip
+		};
+		var restaurants = JSON.parse(body).results;
+		// console.log(typeof restaurants);
+		restaurants.forEach(function(a){
+			var restaurant = {};
+			restaurant["restaurantName"] = a["name"];
+			restaurant["priceLevel"] =  a["price_level"];
+			restaurant["rating"] = a["rating"];
+			r["restaurants"].push(restaurant);
+		});
+		//this will then send back
+		getSubwaysCloseToHotel(hotel, res, r);
+	}
+
+	promisifiedHttpsGet(url + keys.key).then(theFunctionOfHom);
 }
 
+
+
+
+// 	https.get(url + keys.key, function (resp) {
+// 			//console.log(resp);
+// 			resp.on('data', function(d) {
+// 				body = body + d;
+// 			});
+// 			resp.on('end', function(){
+// 				//put together object to pass to the rendered view
+// 				var r = {};
+// 				r["name"] = name;
+// 				r["starRating"] = starRating;
+// 				r["address"] = address;
+// 				r["zip"] = zip;
+// 				r["neighborhoodName"] = neighborhoodName;
+// 				r["totalReviewCount"] = totalReviewCount;
+// 				r["restaurants"] = [];
+// 				var restaurants = JSON.parse(body).results;
+// 				// console.log(typeof restaurants);
+// 				restaurants.forEach(function(a){
+// 					var restaurant = {};
+// 					restaurant["restaurantName"] = a["name"];
+// 					restaurant["priceLevel"] =  a["price_level"];
+// 					restaurant["rating"] = a["rating"];
+// 					r["restaurants"].push(restaurant);
+// 				});
+// 				//this will then send back
+// 				getSubwaysCloseToHotel(hotel, res, r);
+// 			});
+// 	});
+// }
+
 router.get('/testing', function(req, res){
-	var hotel = 
-		{ name: 'Courtyard New York Manhattan/Soho',     
-		starRating: 3.5,     location:      { address: {addressLine1: "181 Varick St, New York", cityName: "New York"},        
-			longitude: -74.005475,        latitude: 40.727583,        
-			timeZone: 'America/New_York',        neighborhoodId: '3018',        
-			neighborhoodName: 'Soho - Tribeca',        cityId: 3000016152,        
-			zoneId: '51958' },     overallGuestRating: 8.9,     
+	var hotel =
+		{ name: 'Courtyard New York Manhattan/Soho',
+		starRating: 3.5,     location:      { address: {addressLine1: "181 Varick St, New York", cityName: "New York"},
+			longitude: -74.005475,        latitude: 40.727583,
+			timeZone: 'America/New_York',        neighborhoodId: '3018',
+			neighborhoodName: 'Soho - Tribeca',        cityId: 3000016152,
+			zoneId: '51958' },     overallGuestRating: 8.9,
 			totalReviewCount: 174, thumbNail: "", thumbnailUrl : ""};
 	//don't forget to update the thumbNail and thumbnailURL, you need to make changes up in evalHotel
 	getFoodByHotel(hotel,res);
@@ -153,7 +198,7 @@ router.get('/', function(req, res){
 	var body = "";
 	https.get(testResponse + keys.key, function (resp) {
 			var body = "";
-			resp.on('data', function(d) {	
+			resp.on('data', function(d) {
 				body = body + d;
 			});
 
@@ -162,40 +207,42 @@ router.get('/', function(req, res){
 				res.end();
 			});
 	});
-	// https.(testResponse + keys.key, function (error, response, body) {
-	// 	console.log(testResponse + keys.key);
-	// 	console.log(request instanceof Promise);
-	// 	// to get next page of results, append to the testResponse + keys.key + &pagetoken=[NEXT PAGE TOKEN GOES HERE]
-	// 	//console.log("in https")
-	// 	//console.log(res.body);
-	// 	//console.log(req.body);
-	// 	// resp.on('data', function(d) {	
-	// 	// 	body = body + d;
- //  // 		});
- //  // 		resp.on('end', function(){
- //  // 			res.header('Content-Type','application/json');
-	// 	// 		res.statusCode = 200;
- //  // 			console.log("on end");
- //  // 			console.log(body);
- //  // 			res.send(body);
- //  // 			res.end();
- //  // 		});
- //  	//console.log(body);
- //  	res.send(body);
- //  	res.end();
- //  // console.log(response);
- //  // return new Promise(error);
- //  // response.send(body);
-	// }).then(
-	// 	function(a){
-	// 		console.log(a);
-	// 		console.log("What is the life of a promise");
-	// 	},
-	// 	function(){
-	// 		// console.log(error);
-	// 		console.log("did I screw this up");
-	// 	}
-	// );
 });
 
 
+
+
+// https.(testResponse + keys.key, function (error, response, body) {
+// 	console.log(testResponse + keys.key);
+// 	console.log(request instanceof Promise);
+// 	// to get next page of results, append to the testResponse + keys.key + &pagetoken=[NEXT PAGE TOKEN GOES HERE]
+// 	//console.log("in https")
+// 	//console.log(res.body);
+// 	//console.log(req.body);
+// 	// resp.on('data', function(d) {
+// 	// 	body = body + d;
+//  // 		});
+//  // 		resp.on('end', function(){
+//  // 			res.header('Content-Type','application/json');
+// 	// 		res.statusCode = 200;
+//  // 			console.log("on end");
+//  // 			console.log(body);
+//  // 			res.send(body);
+//  // 			res.end();
+//  // 		});
+//  	//console.log(body);
+//  	res.send(body);
+//  	res.end();
+//  // console.log(response);
+//  // return new Promise(error);
+//  // response.send(body);
+// }).then(
+// 	function(a){
+// 		console.log(a);
+// 		console.log("What is the life of a promise");
+// 	},
+// 	function(){
+// 		// console.log(error);
+// 		console.log("did I screw this up");
+// 	}
+// );
