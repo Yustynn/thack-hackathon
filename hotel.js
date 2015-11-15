@@ -5,35 +5,41 @@
 var fs = require('fs');
 
 var json = fs.readFileSync('./hotels.json', 'utf-8');
-var obj = JSON.parse(json);
+unfilteredHotels = JSON.parse(json)['hotels'];
 var hotelsArr = [];
-readObjectandAdd(obj);
+readObjectAndAdd(unfilteredHotels);
 
 //Initialize storage for all hotels
 
 
-function readObjectandAdd(objHotel) {
-    function readObjectandAddHelper(obj) {
-        var requiredKeys = ['name', 'location', 'starRating', 'minPrice', 'overallGuestRating', 'totalReviewCount', 'thumbnailUrl', 'hotelId'];
-        for (var key in obj) {
-            if (requiredKeys.indexOf(key) == -1) {
-                if (typeof obj[key] === 'object') {
-                readObjectandAdd(obj[key]);
-                }
-            } else {
-            	if(key === "hotelId"){
-            		hotel['url'] = 'http://www.priceline.com/hotel/hotelOverviewGuide.do?numberOfRooms=1&from=rateSelectionDirect&propID='+obj[key]+'&noDate=Y';
-            	}
-                hotel[key] = obj[key];
-            }
-        }
-    }
-    var hotel = {};
-    readObjectandAddHelper(objHotel);
-    //console.log(hotel)
-    if(Object.getOwnPropertyNames(hotel).length !== 0){
-		hotelsArr.push(hotel)
-	}
+function readObjectAndAdd(unfilteredHotels) {
+    
+	unfilteredHotels = [].slice.call(unfilteredHotels, 0);
+	// console.log(unfilteredHotels)
+    unfilteredHotels.forEach(function(unfilteredHotel) {
+    	function readObjectAndAddHelper(unfilteredHotel) {
+	        var requiredKeys = ['name', 'location', 'starRating', 'minPrice', 'overallGuestRating', 'totalReviewCount', 'thumbnailUrl', 'hotelId'];
+	        for (var key in unfilteredHotel) {
+	            if (requiredKeys.indexOf(key) === -1) {
+	                if (typeof unfilteredHotel[key] === 'object') {
+	                readObjectAndAdd(unfilteredHotel[key]);
+	                }
+	            } else {
+	            	if(key === "hotelId"){
+	            		hotel['url'] = 'http://www.priceline.com/hotel/hotelOverviewGuide.do?numberOfRooms=1&from=rateSelectionDirect&propID='+unfilteredHotel[key]+'&noDate=Y';
+	            	}
+	                hotel[key] = unfilteredHotel[key];
+	            }
+	        }
+	    }
+    	var hotel = {};
+	    readObjectAndAddHelper(unfilteredHotel);
+	    //console.log(hotel)
+	    if(Object.getOwnPropertyNames(hotel).length !== 0){
+	    	hotel['minPrice'] = unfilteredHotel['ratesSummary']['minPrice'];
+			hotelsArr.push(hotel);
+		}
+    })   
 }
 
 module.exports = hotelsArr;
