@@ -8,7 +8,6 @@ fs.readFile('./hotels.json', function(err, contents){
 	if(err) throw err;
 	var obj = JSON.parse(contents);
 	readObjectandAdd(obj);
-
 })
 
 
@@ -17,13 +16,16 @@ var hotelsArr = [];
 
 function readObjectandAdd(objHotel) {
     function readObjectandAddHelper(obj) {
-        var requiredKeys = ['name', 'location', 'starRating', 'minPrice', 'overallGuestRating', 'totalReviewCount', 'thumbnailURL', 'url'];
+        var requiredKeys = ['name', 'location', 'starRating', 'minPrice', 'overallGuestRating', 'totalReviewCount', 'thumbnailUrl', 'hotelId'];
         for (var key in obj) {
             if (requiredKeys.indexOf(key) == -1) {
                 if (typeof obj[key] === 'object') {
                 readObjectandAdd(obj[key]);
                 }
             } else {
+            	if(key === "hotelId"){
+            		hotel['url'] = 'http://www.priceline.com/hotel/hotelOverviewGuide.do?numberOfRooms=1&from=rateSelectionDirect&propID='+obj[key]+'&noDate=Y';
+            	}
                 hotel[key] = obj[key];
             }
         }
@@ -34,5 +36,6 @@ function readObjectandAdd(objHotel) {
     if(Object.getOwnPropertyNames(hotel).length !== 0){
 		hotelsArr.push(hotel)
 	}
+	console.log(hotelsArr);
 }
 
