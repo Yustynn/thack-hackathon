@@ -43,18 +43,18 @@ h1 {
 .food{
   left: 10%;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 .transit{
   left: 50%;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .tourism{
   right: 10%;
   position: absolute;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
 .even{
@@ -65,6 +65,10 @@ h1 {
 .hotelInfo{
   color: black;
   font-weight: bold;
+}
+
+h4{
+  margin-top: -3%; 
 }
 
 .odd{
