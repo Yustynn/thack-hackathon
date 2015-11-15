@@ -8,9 +8,6 @@ var hotels = require('../hotel.js');
 var request = Promise.promisify(require("request"));
 Promise.promisifyAll(https);
 
-
-
-
 function promisifyHotelInfoRequests(hotel) {
 	var hotel = hotel,
 		// requestUrl for restaurants
@@ -104,7 +101,7 @@ filteredHotels = hotels.map(function(unfilteredHotel) {
 		zip: unfilteredHotel.location.address.cityName
 	};
 
-	return hotel;	
+	return hotel;
 });
 
 router.get('/nearby', function(req, res){
