@@ -1,12 +1,7 @@
-var express = require('express')
-var router = express.Router()
-module.exports = router;
-var keys = require("../apiKeys");
+var keys = require("./apiKeys");
 var https = require('https');
 var Promise = require('bluebird');
-var hotels = require('../hotel.js');
-var request = Promise.promisify(require("request"));
-Promise.promisifyAll(https);
+var hotels = require('./hotel.js');
 
 function promisifyHotelInfoRequests(hotel) {
 	var hotel = hotel,
@@ -22,13 +17,21 @@ function promisifyHotelInfoRequests(hotel) {
 			// requestUrl for subways
 			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
 				+ hotel.latitude + "," + hotel.longitude
+				+"&radius=" + 1000
+				+ "&types=" + 'points_of_interest' +
+				"&key=" + keys.key;
+			return promisifiedHttpsGet(requestUrl)
+		})
+		.then(function resolve(stuff){
+			hotel.pointsOfInterest = getPointsOfInterest(stuff);
+			requestUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location="
+				+ hotel.latitude + "," + hotel.longitude
 				+"&radius=" + 600
 				+ "&types=" + 'subway_station' +
 				"&key=" + keys.key;
 			return promisifiedHttpsGet(requestUrl)
 		})
 		.then(function resolve(stuff) {
-			console.log('entered subway area')
 			hotel.subways = getSubways(stuff);
 			return hotel;
 		})
@@ -55,9 +58,22 @@ function getRestaurants(body) {
 }
 
 
+function getPointsOfInterest(body) {
+	var pointsOfInterest = [];
+	var unfilteredPointsOfInterest = JSON.parse(body).results;
+
+	unfilteredPointsOfInterest.forEach(function(unfilteredPointOfInterest){
+		var pointOfInterest = {
+			name : unfilteredPointOfInterest.name,
+			rating : unfilteredPointOfInterest.rating
+		};
+		pointsOfInterest.push(pointOfInterest);
+	});
+	return pointsOfInterest;
+}
+
 function getSubways(body) {
 	var subways = { stations: [] };
-
 	var unfilteredStations = JSON.parse(body).results;
 
 	unfilteredStations.forEach(function(unfilteredStation){
@@ -104,10 +120,6 @@ filteredHotels = hotels.map(function(unfilteredHotel) {
 	return hotel;
 });
 
-router.get('/nearby', function(req, res){
-	hotelsPromises = filteredHotels.map(promisifyHotelInfoRequests);
-	Promise.all(hotelsPromises)
-		.then(function resolve(hotelsWithInfo) {
-			console.log(hotelsWithInfo);
-		});
-});
+hotelsPromises = filteredHotels.map(promisifyHotelInfoRequests);
+
+module.exports = Promise.all(hotelsPromises);
